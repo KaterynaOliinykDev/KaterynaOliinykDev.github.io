@@ -1,0 +1,233 @@
+.main-container{
+  background-color: rgba(215,215,215,255);
+  width: 100%;
+}
+.mat-mdc-card-header-text{
+  width:100%;
+}
+.cv-container {
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+.cv-container mat-drawer {
+  background-color: rgba(33,32,38,255);
+  width:30%;
+}
+.mat-drawer-inner-container{
+  overflow-x: hidden;
+}
+.cv-container mat-drawer-content {
+  width:70%;
+  background-color: rgba(255,255,255,255);
+}
+.cv-container mat-drawer-content .skills mat-card-title,
+.cv-container mat-drawer-content .about mat-card-title,
+.cv-container mat-drawer-content .experience mat-card-title{
+  border-bottom: 1px solid rgba(33,32,38,255);
+  padding-bottom: 10px;
+  font-size:16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.cv-container mat-drawer-content .about mat-card-subtitle,
+.cv-container mat-drawer-content .experience mat-card-subtitle{
+  color: rgba(33,32,38,255);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.cv-container mat-drawer-content .skills p,
+.cv-container mat-drawer-content .skills span{
+  color: rgba(33,32,38,255);
+  display: flex;
+}
+.cv-container mat-drawer-content .skills span{
+  font-weight: 500;
+  margin-right: 10px;
+}
+.cv-container mat-drawer-content .skills mat-list-item{
+  padding-left:0;
+
+}
+.cv-container mat-drawer-content .skills p mat-icon{
+  background-color: rgba(254,203,0,255);
+  color:rgba(255,255,255,255);
+  margin-right: 10px;
+}
+.cv-container img{
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.cv-container mat-drawer mat-card{
+  color:rgba(255,255,255,255);
+  width:100%;
+  background-color: rgba(33,32,38,255);
+}
+mat-card.position{
+  background-color:rgba(254,203,0,255);
+  margin-top: 50px;
+  padding:30px;
+  border-radius: initial;
+  border-style: none;
+}
+mat-card.about,
+mat-card.skills,
+mat-card.experience{
+  background-color: rgba(255,255,255,255);
+  color: rgba(33,32,38,255);
+  padding: 30px;
+  border: 0;
+  box-shadow: none;
+  padding-top:20px;
+}
+mat-card.position mat-card-title{
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: rgb(33, 32, 38);
+}
+mat-card.position mat-card-subtitle{
+  letter-spacing: 4px;
+  color: rgb(33, 32, 38);
+}
+mat-card.position mat-card-title span{
+  font-weight:700;
+}
+mat-card.education{
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+mat-card.education .mat-mdc-card-header{
+  padding-right:0;
+}
+mat-card.phone .mat-mdc-card-header-text{
+  width:100%;
+}
+mat-card.education h3{
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgba(255,255,255,255);
+}
+mat-card.education p{
+  font-weight: 300;
+  color: rgba(255,255,255,255);
+}
+.cv-container mat-drawer mat-card.education mat-card-title{
+  font-size: 16px;
+  border-bottom: 1px solid rgba(254,203,0,255);
+  padding-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.cv-container mat-drawer mat-card.education mat-card-subtitle{
+  margin-left: 15px;
+}
+.cv-container mat-drawer mat-card.phone mat-card-header,
+.cv-container mat-drawer mat-card.email mat-card-header{
+  padding:0;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.cv-container mat-drawer mat-card.phone mat-card-title,
+.cv-container mat-drawer mat-card.email mat-card-title{
+  height:20px;
+  background-color: rgba(41,42,47,255);
+  padding-bottom: 5px;
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 50px;
+}
+.cv-container mat-drawer mat-card.phone mat-card-subtitle,
+.cv-container mat-drawer mat-card.email mat-card-subtitle{
+  height:20px;
+  width:100%;
+  display: block;
+  float:left;
+  color: rgba(255,255,255,255);
+  padding-top:5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-left: 50px;
+}
+.cv-container mat-drawer mat-card.phone mat-card-title::before,
+.cv-container mat-drawer mat-card.email mat-card-title::before{
+  content:"";
+  width: 36px;
+  height: 100%;
+  background-color: rgba(254,203,0,255);
+  position: absolute;
+  left:0;
+}
+::ng-deep mat-tab-group{
+  margin-top:75px;
+}
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled),
+::ng-deep .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) {
+  border: 1px solid rgba(33,32,38,255);
+  background-color: rgba(254,203,0,255);
+}
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab__text-label {
+  color: rgba(33,32,38,255);
+  text-transform: uppercase;
+}
+
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active,
+::ng-deep .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active{
+  background-color: rgba(33,32,38,255);
+}
+
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label{
+  color:rgba(254,203,0,255);
+  text-transform: uppercase;
+}
+::ng-deep mat-card.experience .mat-mdc-card-header-text{
+  width:100%;
+}
+.flex-container{
+  display: flex;
+  width:100%;
+  margin-bottom: 20px;
+}
+.flex-container .col30{
+  width:30%;
+}
+.flex-container .col70{
+  width:70%;
+}
+mat-card.experience p{
+  margin-top:0;
+}
+mat-card.experience h4{
+  margin-top:0;
+}
+mat-card.experience ul{
+  padding-left: 0;
+  list-style: none;
+}
+mat-card.experience p{
+  font-weight: 400;
+  font-size: 14px;
+}
+mat-card.experience p.title{
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgb(254, 203, 0);
+  padding-bottom: 5px;
+}
+mat-card.experience span {
+  font-weight: 500;
+}
+
