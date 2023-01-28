@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+  mat-card.position{
+    display: none;
+  }
+  .cv-container{
+    width:100% !important;
+    display: initial;
+  }
+  .cv-container mat-drawer-content{
+    width:100% !important;
+    display: initial;
+  }
+  .cv-container mat-drawer{
+    width:100% !important;
+    position: initial;
+  }
+  mat-card.about,
+  mat-card.skills,
+  mat-card.experience{
+    padding: 0px !important;
+  }
+  ::ng-deep mat-card.skills .mat-mdc-card-header-text{
+   width:100%;
+  }
+  .cv-container mat-drawer-content .skills mat-list-item{
+    height: auto;
+  }
+  .mat-mdc-card-header{
+    padding:10px;
+  }
+  ::ng-deep .mat-mdc-tab-labels{
+    display: block !important;
+  }
+  mat-tab-group {
+    margin-top: 10px;
+  }
+  ::ng-deep .mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination {
+    display: none!important;
+  }
+  .flex-container{
+    display: block!important;
+  }
+  .flex-container .col30,
+  .flex-container .col70{
+    width:100%!important;
+  }
+  ::ng-deep .mat-mdc-tab-body-content {
+    overflow: initial!important;
+  }
+  mat-card.position.mobile{
+    display: block!important;
+    background-color: rgba(254,203,0,255)!important;
+    margin-top:0;
+    padding: 10px;
+  }
+  .cv-container mat-drawer-content .skills .mat-mdc-card-header{
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1299px) {
+  .cv-container{
+    width:100%!important;
+  }
+}

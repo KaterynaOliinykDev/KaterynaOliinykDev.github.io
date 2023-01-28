@@ -31,6 +31,7 @@
   font-weight: 500;
   width:100%;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .cv-container mat-drawer-content .about mat-card-subtitle,
@@ -40,10 +41,14 @@
   font-weight: 400;
   letter-spacing: 1px;
 }
+mat-list{
+  display: flex;
+  flex-wrap: wrap;
+}
 .cv-container mat-drawer-content .skills p,
 .cv-container mat-drawer-content .skills span{
   color: rgba(33,32,38,255);
-  display: flex;
+  white-space: pre-line;
 }
 .cv-container mat-drawer-content .skills span{
   font-weight: 500;
@@ -51,12 +56,13 @@
 }
 .cv-container mat-drawer-content .skills mat-list-item{
   padding-left:0;
-
+  padding-right: 0;
 }
 .cv-container mat-drawer-content .skills p mat-icon{
   background-color: rgba(254,203,0,255);
   color:rgba(255,255,255,255);
   margin-right: 10px;
+  float: left;
 }
 .cv-container img{
   width: 100%;
@@ -74,6 +80,9 @@ mat-card.position{
   padding:30px;
   border-radius: initial;
   border-style: none;
+}
+mat-card.position.mobile{
+  display: none;
 }
 mat-card.about,
 mat-card.skills,
